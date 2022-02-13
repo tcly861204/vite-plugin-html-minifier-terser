@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/tcly861204/vite-plugin-html-minifier-terser#readme",
   "dependencies": {
-    "html-minifier-terser": "^7.0.0-alpha.1",
+    "html-minifier-terser": "^7.0.0-alpha.1"
+  },
+  "devDependencies": {
     "vite": "^2.7.2"
   }
 }
