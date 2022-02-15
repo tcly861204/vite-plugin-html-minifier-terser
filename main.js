@@ -1,7 +1,7 @@
 const { minify } = require('html-minifier-terser')
 module.exports = function (options = null) {
   return {
-    name: 'vite-plugin-html-minifier',
+    name: 'vite-plugin-html-minifier-terser',
     apply: 'build',
     enforce: 'post',
     async generateBundle(_options, outBundle) {
