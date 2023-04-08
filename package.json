@@ -1,12 +1,12 @@
 {
   "name": "vite-plugin-html-minifier-terser",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "vite打包插件压缩html",
-  "main": "main.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/main.ts --dts"
   },
-  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tcly861204/vite-plugin-html-minifier-terser.git"
@@ -27,6 +27,10 @@
     "html-minifier-terser": "^7.0.0-alpha.1"
   },
   "devDependencies": {
-    "vite": "^2.7.2"
+    "@types/html-minifier-terser": "^7.0.0",
+    "@types/node": "^18.15.11",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^3.1.3"
   }
 }
