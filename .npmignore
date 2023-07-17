@@ -3,7 +3,6 @@ node_modules/
 .github
 package-lock.json
 pnpm-lock.yaml
-dist
 tsconfig.json
 .vscode
 .npmrc
