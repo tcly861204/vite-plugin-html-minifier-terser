@@ -1,7 +1,13 @@
 import { minify } from 'html-minifier-terser'
 import { PluginOption, Plugin } from 'vite'
 
-const HtmlMinifierTerser = (options?: Record<string, any>): Plugin | PluginOption => {
+interface Options {
+  removeAttributeQuotes?: boolean,
+  collapseWhitespace?: boolean,
+  [attr: string]: any
+}
+
+const HtmlMinifierTerser = (options?: Options): Plugin | PluginOption => {
   return {
     name: 'vite-plugin-html-minifier-terser',
     apply: 'build',
