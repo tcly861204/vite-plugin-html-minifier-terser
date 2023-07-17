@@ -1,7 +1,7 @@
 import { minify } from 'html-minifier-terser'
-import { PluginOption } from 'vite'
+import { PluginOption, Plugin } from 'vite'
 
-const HtmlMinifierTerser = (options?: Record<string, any>): PluginOption => {
+const HtmlMinifierTerser = (options?: Record<string, any>): Plugin | PluginOption => {
   return {
     name: 'vite-plugin-html-minifier-terser',
     apply: 'build',
